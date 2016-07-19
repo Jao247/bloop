@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "ConnectEx", "ConnectEx\ConnectEx.elements", "{FC60D9DD-7D8E-4091-8C19-5A9455ED36EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC60D9DD-7D8E-4091-8C19-5A9455ED36EC}.Debug|Default.ActiveCfg = Debug
+		{FC60D9DD-7D8E-4091-8C19-5A9455ED36EC}.Debug|Default.Build.0 = Debug
+		{FC60D9DD-7D8E-4091-8C19-5A9455ED36EC}.Release|Default.ActiveCfg = Release
+		{FC60D9DD-7D8E-4091-8C19-5A9455ED36EC}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
