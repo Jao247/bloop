@@ -10,8 +10,12 @@
 
 @end
 
-@interface RootViewController: UIViewController
+@interface ServerVC: UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *cusID;
+@property (weak, nonatomic) IBOutlet UITextField *cusPass;
+@property (weak, nonatomic) IBOutlet UISwitch *isPersonal;
+@property (weak, nonatomic) IBOutlet UIButton *setupButton;
 
 
 @end

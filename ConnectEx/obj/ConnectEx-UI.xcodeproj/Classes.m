@@ -13,7 +13,7 @@
 
 #import "Classes.h"
 
-@implementation RootViewController
+@implementation ServerVC
 
 
 @end
