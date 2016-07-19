@@ -4,17 +4,3 @@
 // It is not meant to compile, and any changes will be ignored and discarded. 
 //
 
-#import "Classes.h"
-
-@implementation AppDelegate
-
-
-@end
-
-#import "Classes.h"
-
-@implementation ServerVC
-
-
-@end
-

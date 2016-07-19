@@ -54,6 +54,10 @@
   <ItemGroup>
     <Compile Include="AppDelegate.swift" />
     <Compile Include="ServerVC.swift" />
+    <Compile Include="InitialVC.swift" />
+    <Compile Include="DataVC.swift" />
+    <Compile Include="EmployeeLoginVC.swift" />
+    <Compile Include="SyncVC.swift" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Info.plist" />
