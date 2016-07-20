@@ -7,47 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ECCB000000000000000000F2 /* CoreGraphics.framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F2 /* CoreGraphics.framework */; };
-		ECCB000000000000000000F3 /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F3 /* Foundation.framework */; };
-		ECCB000000000000000000F4 /* Nougat.framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F4 /* Nougat.framework */; };
-		ECCB000000000000000000F5 /* Swift.framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F5 /* Swift.framework */; };
-		ECCB000000000000000000F6 /* rtl.framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F6 /* rtl.framework */; };
-		ECCB000000000000000000F7 /* UIKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F7 /* UIKit.framework */; };
-		ECCB000000000000000000F8 /* .framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F8 /* .framework */; };
-		ECCB000000000000000000F9 /* CoreFoundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000F9 /* CoreFoundation.framework */; };
-		ECCB000000000000000000FB /* LaunchScreen.xib */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000FB /* LaunchScreen.xib */; };
-		ECCB000000000000000000FC /* Main.storyboard */ = {isa = PBXBuildFile; fileRef = ECCB000000000000000000FC /* Main.storyboard */; };
+		ECCB00000000000000000011 /* CoreGraphics.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000011 /* CoreGraphics.framework */; };
+		ECCB00000000000000000012 /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000012 /* Foundation.framework */; };
+		ECCB00000000000000000013 /* Nougat.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000013 /* Nougat.framework */; };
+		ECCB00000000000000000014 /* Swift.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000014 /* Swift.framework */; };
+		ECCB00000000000000000015 /* rtl.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000015 /* rtl.framework */; };
+		ECCB00000000000000000016 /* UIKit.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000016 /* UIKit.framework */; };
+		ECCB00000000000000000017 /* .framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000017 /* .framework */; };
+		ECCB00000000000000000018 /* CoreFoundation.framework */ = {isa = PBXBuildFile; fileRef = ECCB00000000000000000018 /* CoreFoundation.framework */; };
+		ECCB0000000000000000001A /* LaunchScreen.xib */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000001A /* LaunchScreen.xib */; };
+		ECCB0000000000000000001B /* Main.storyboard */ = {isa = PBXBuildFile; fileRef = ECCB0000000000000000001B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ECCB000000000000000000FF /* ConnectEx-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConnectEx-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECCB000000000000000000F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000F4 /* Nougat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nougat.framework; path = "System/Library/Frameworks/Nougat.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000F5 /* Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swift.framework; path = "System/Library/Frameworks/Swift.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000F6 /* rtl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rtl.framework; path = "System/Library/Frameworks/rtl.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000F8 /* .framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = .framework; path = "System/Library/Frameworks/.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000F9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = SDKROOT; };
-		ECCB000000000000000000FB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LaunchScreen.xib"; path = "../Resources/LaunchScreen.xib"; sourceTree = SOURCE_ROOT; };
-		ECCB000000000000000000FC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main.storyboard"; path = "../Resources/Main.storyboard"; sourceTree = SOURCE_ROOT; };
-		ECCB000000000000000000FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images.xcassets"; path = "../Resources/Images.xcassets"; sourceTree = SOURCE_ROOT; };
-		ECCB000000000000000000FD /* Classes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; includeInIndex = 0; name = "Classes.h"; path = "ConnectEx-UI.xcodeproj/Classes.h"; sourceTree = "<group>"; };
-		ECCB000000000000000000FE /* Classes.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; includeInIndex = 0; name = "Classes.m"; path = "ConnectEx-UI.xcodeproj/Classes.m"; sourceTree = "<group>"; };
+		ECCB0000000000000000001E /* ConnectEx-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ConnectEx-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCB00000000000000000011 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000012 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000013 /* Nougat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nougat.framework; path = "System/Library/Frameworks/Nougat.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000014 /* Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swift.framework; path = "System/Library/Frameworks/Swift.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000015 /* rtl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rtl.framework; path = "System/Library/Frameworks/rtl.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000016 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000017 /* .framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = .framework; path = "System/Library/Frameworks/.framework"; sourceTree = SDKROOT; };
+		ECCB00000000000000000018 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = SDKROOT; };
+		ECCB0000000000000000001A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LaunchScreen.xib"; path = "../Resources/LaunchScreen.xib"; sourceTree = SOURCE_ROOT; };
+		ECCB0000000000000000001B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main.storyboard"; path = "../Resources/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		ECCB00000000000000000019 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images.xcassets"; path = "../Resources/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		ECCB0000000000000000001C /* Classes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; includeInIndex = 0; name = "Classes.h"; path = "ConnectEx-UI.xcodeproj/Classes.h"; sourceTree = "<group>"; };
+		ECCB0000000000000000001D /* Classes.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; includeInIndex = 0; name = "Classes.m"; path = "ConnectEx-UI.xcodeproj/Classes.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 /* Begin PBXFrameworksBuildPhase section */
     EC12D20817C22C67006A4D91 /* Frameworks */ = {
       isa = PBXFrameworksBuildPhase;
       buildActionMask = 2147483647;
       files = (
-        ECCB000000000000000000F2 /* CoreGraphics.framework */,
-        ECCB000000000000000000F3 /* Foundation.framework */,
-        ECCB000000000000000000F4 /* Nougat.framework */,
-        ECCB000000000000000000F5 /* Swift.framework */,
-        ECCB000000000000000000F6 /* rtl.framework */,
-        ECCB000000000000000000F7 /* UIKit.framework */,
-        ECCB000000000000000000F8 /* .framework */,
-        ECCB000000000000000000F9 /* CoreFoundation.framework */,
+        ECCB00000000000000000011 /* CoreGraphics.framework */,
+        ECCB00000000000000000012 /* Foundation.framework */,
+        ECCB00000000000000000013 /* Nougat.framework */,
+        ECCB00000000000000000014 /* Swift.framework */,
+        ECCB00000000000000000015 /* rtl.framework */,
+        ECCB00000000000000000016 /* UIKit.framework */,
+        ECCB00000000000000000017 /* .framework */,
+        ECCB00000000000000000018 /* CoreFoundation.framework */,
       );
       runOnlyForDeploymentPostprocessing = 0;
     };
@@ -67,7 +67,7 @@
     EC12D20C17C22C67006A4D91 /* Products */ = {
       isa = PBXGroup;
       children = (
-        ECCB000000000000000000FF /* ConnectEx-UI.app */,
+        ECCB0000000000000000001E /* ConnectEx-UI.app */,
       );
       name = Products;
       sourceTree = "<group>";
@@ -75,14 +75,14 @@
     EC12D20D17C22C67006A4D91 /* Frameworks */ = {
       isa = PBXGroup;
       children = (
-        ECCB000000000000000000F2 /* CoreGraphics.framework */,
-        ECCB000000000000000000F3 /* Foundation.framework */,
-        ECCB000000000000000000F4 /* Nougat.framework */,
-        ECCB000000000000000000F5 /* Swift.framework */,
-        ECCB000000000000000000F6 /* rtl.framework */,
-        ECCB000000000000000000F7 /* UIKit.framework */,
-        ECCB000000000000000000F8 /* .framework */,
-        ECCB000000000000000000F9 /* CoreFoundation.framework */,
+        ECCB00000000000000000011 /* CoreGraphics.framework */,
+        ECCB00000000000000000012 /* Foundation.framework */,
+        ECCB00000000000000000013 /* Nougat.framework */,
+        ECCB00000000000000000014 /* Swift.framework */,
+        ECCB00000000000000000015 /* rtl.framework */,
+        ECCB00000000000000000016 /* UIKit.framework */,
+        ECCB00000000000000000017 /* .framework */,
+        ECCB00000000000000000018 /* CoreFoundation.framework */,
       );
       name = Frameworks;
       sourceTree = "<group>";
@@ -90,8 +90,8 @@
     ECCBA04517C22CBC00E46CF9 /* XIBs & Storyboards */ = {
       isa = PBXGroup;
       children = (
-        ECCB000000000000000000FB /* LaunchScreen.xib */,
-        ECCB000000000000000000FC /* Main.storyboard */,
+        ECCB0000000000000000001A /* LaunchScreen.xib */,
+        ECCB0000000000000000001B /* Main.storyboard */,
       );
       name = "XIBs & Storyboards";
       sourceTree = "<group>";
@@ -99,7 +99,7 @@
     EC430FBA1987CCE700365C06 /* Asset Catalogs */ = {
       isa = PBXGroup;
       children = (
-        ECCB000000000000000000FA /* Images.xcassets */,
+        ECCB00000000000000000019 /* Images.xcassets */,
       );
       name = "Asset Catalogs";
       sourceTree = "<group>";
@@ -107,8 +107,8 @@
     ECCBA05017C22D1F00E46CF9 /* Generated Code */ = {
       isa = PBXGroup;
       children = (
-        ECCB000000000000000000FD /* Classes.h */,
-        ECCB000000000000000000FE /* Classes.m */,
+        ECCB0000000000000000001C /* Classes.h */,
+        ECCB0000000000000000001D /* Classes.m */,
       );
       name = "Generated Code";
       sourceTree = "<group>";
@@ -127,13 +127,13 @@
 			);
 			name = "ConnectEx-UI";
 			productName = "ConnectEx-UI";
-			productReference = ECCB000000000000000000FF /* ConnectEx-UI.app */;
+			productReference = ECCB0000000000000000001E /* ConnectEx-UI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ECCB000000000000000000F1 /* Project object */ = {
+		ECCB00000000000000000010 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
@@ -198,5 +198,5 @@
 /* End XCConfigurationList section */
 
 	};
-rootObject = ECCB000000000000000000F1 /* Project object */;
+rootObject = ECCB00000000000000000010 /* Project object */;
 }
