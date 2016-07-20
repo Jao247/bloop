@@ -8,7 +8,7 @@ import UIKit
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay));
         dispatch_after(time, dispatch_get_main_queue())
         {
-            self.performSegueWithIdentifier(self.segue, sender:nil);
+            self.performSegueWithIdentifier("toList", sender:nil);
         }
     }
 
