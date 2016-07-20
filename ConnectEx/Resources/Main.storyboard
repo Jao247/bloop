@@ -355,10 +355,10 @@
             </objects>
             <point key="canvasLocation" x="169" y="1314"/>
         </scene>
-        <!--data Update Screen-->
+        <!--Synchronisation-->
         <scene sceneID="0Oq-Al-zR3">
             <objects>
-                <viewController id="V0s-hL-y47" userLabel="data Update Screen" customClass="SyncVC" sceneMemberID="viewController">
+                <viewController id="V0s-hL-y47" userLabel="Synchronisation" customClass="SyncVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qI3-xO-XYc"/>
                         <viewControllerLayoutGuide type="bottom" id="zgN-0Y-uPy"/>
