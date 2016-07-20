@@ -168,6 +168,18 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="loadServerLogin" id="Oft-7E-8gO"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vk-ng-ct3">
+                                <rect key="frame" x="7" y="43" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZq-h9-7vx">
+                                <rect key="frame" x="118" y="43" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loadScene:" destination="dwz-6w-ZuW" eventType="touchUpInside" id="bV1-FS-n9h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -175,6 +187,9 @@
                             <constraint firstItem="3co-zn-WVH" firstAttribute="centerY" secondItem="ghh-QL-tfE" secondAttribute="centerY" id="s47-a2-dC7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="typeOfSegue" destination="8vk-ng-ct3" id="g89-IJ-I2e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXH-63-C5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +359,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="oEX-Xc-jkz"/>
-        <segue reference="8U9-HR-XxW"/>
+        <segue reference="3lP-oK-ZII"/>
     </inferredMetricsTieBreakers>
 </document>

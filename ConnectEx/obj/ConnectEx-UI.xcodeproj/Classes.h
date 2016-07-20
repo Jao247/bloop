@@ -19,6 +19,8 @@
 @end
 
 @interface InitialVC: UIViewController
+@property (weak nonatomic) IBOutlet UITextField *typeOfSegue;
+- (IBAction)loadScene:(id)sender;
 @end
 
 @interface DataVC: UIViewController
