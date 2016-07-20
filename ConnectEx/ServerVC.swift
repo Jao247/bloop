@@ -1,6 +1,6 @@
 ﻿import UIKit
 
-@IBObject class ServerVC : UIViewController, UITextFieldDelegate {
+@IBObject class ServerVC : UIViewController, IUITextFieldDelegate {
     
     // Variables from storyboard
     @IBOutlet weak var cusID: UITextField!;
@@ -9,11 +9,11 @@
     @IBOutlet weak var setupButton: UIButton!;
 
     // Class variables
-    public var id: String;
-    public var passcode: String;
+    public var id: String?;
+    public var passcode: String?;
     
     public override func viewDidLoad() {
- 	super.viewDidLoad()
+ 		super.viewDidLoad()
         cusID.delegate = self;
         cusPass.delegate = self;
     }
@@ -22,14 +22,14 @@
  	super.didReceiveMemoryWarning()
     }
 
-    public override func prepareForSegue(sender: UIStoryboardSegue)
+    func prepareForSegue(sender: UIStoryboardSegue)
     {
-        if (sender == setupButton)
+        if (sender === setupButton)
         {
             if (isPersonal.isOn)
             {
-                id = cusID.text;
-                passcode = cusPass.text;
+                id = cusID.text!;
+                passcode = cusPass.text!;
             }
             
         }

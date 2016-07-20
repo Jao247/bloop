@@ -1,11 +1,13 @@
 import UIKit
 
 @IBObject public class EmployeeLoginVC: UIViewController {
-		
-	public init() {
-		super.init()
-	}
-		
+
+	//Storyboard Variables
+	@IBOutlet weak var empName: UITextField!;
+	@IBOutlet weak var empPass: UITextField!;
+
+	// Class Variables
+
 	public override func viewDidLoad() {
 		super.viewDidLoad()
 	}
