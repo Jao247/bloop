@@ -221,27 +221,24 @@
                                     <constraint firstAttribute="height" constant="67" id="wqW-Cf-tUp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZMC-JO-FKI">
                                 <rect key="frame" x="20" y="370" width="560" height="2"/>
                             </progressView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XGL-ds-k4F">
-                                <rect key="frame" x="282" y="281" width="37" height="37"/>
-                                <color key="color" red="1" green="0.53883642890000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XGL-ds-k4F">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZMC-JO-FKI" firstAttribute="top" secondItem="XGL-ds-k4F" secondAttribute="bottom" constant="52" id="AFo-df-eaZ"/>
+                            <constraint firstItem="VIL-bu-Lcr" firstAttribute="top" secondItem="ZMC-JO-FKI" secondAttribute="bottom" constant="8" id="1Mf-Ja-lQz"/>
                             <constraint firstItem="ZMC-JO-FKI" firstAttribute="leading" secondItem="6V1-pz-TTI" secondAttribute="leadingMargin" id="Kpi-BY-xQt"/>
-                            <constraint firstItem="XGL-ds-k4F" firstAttribute="centerY" secondItem="6V1-pz-TTI" secondAttribute="centerY" id="LNb-IE-Bna"/>
-                            <constraint firstItem="XGL-ds-k4F" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="Lpj-5Z-X8b"/>
                             <constraint firstItem="VIL-bu-Lcr" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="MnJ-bI-xxt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZMC-JO-FKI" secondAttribute="trailing" id="Nly-34-kLl"/>
                             <constraint firstItem="ZMC-JO-FKI" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="UzF-Y9-MGF"/>
-                            <constraint firstItem="VIL-bu-Lcr" firstAttribute="top" secondItem="ZMC-JO-FKI" secondAttribute="bottom" constant="8" id="qu5-so-eVT"/>
+                            <constraint firstItem="6M7-CW-cMR" firstAttribute="top" secondItem="VIL-bu-Lcr" secondAttribute="bottom" constant="153" id="VY6-aF-Pvs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mich" id="MP9-zd-dTc"/>
@@ -386,7 +383,7 @@
         <image name="Placeholder" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="oEX-Xc-jkz"/>
         <segue reference="3lP-oK-ZII"/>
-        <segue reference="dUJ-sZ-eq1"/>
     </inferredMetricsTieBreakers>
 </document>
