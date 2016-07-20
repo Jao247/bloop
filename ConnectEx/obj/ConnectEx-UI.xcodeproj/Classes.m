@@ -8,17 +8,6 @@
 
 @implementation AppDelegate
 
-@end
-
-#import "Classes.h"
-
-@implementation ServerVC
-
-@end
-
-#import "Classes.h"
-
-@implementation EmpLoginVC
 
 @end
 
@@ -26,11 +15,31 @@
 
 @implementation DataVC
 
+
+@end
+
+#import "Classes.h"
+
+@implementation EmpLoginVC
+
+
 @end
 
 #import "Classes.h"
 
 @implementation InitialVC
+
+- (IBAction)loadScene:(id)sender
+{
+  // Placeholder method. Do not add code here.
+}
+
+@end
+
+#import "Classes.h"
+
+@implementation ServerVC
+
 
 @end
 
@@ -38,4 +47,6 @@
 
 @implementation SyncVC
 
+
 @end
+

@@ -10,20 +10,21 @@ import UIKit
     
     public override func viewDidLoad() {
 	super.viewDidLoad()
-        chooseSegue()
     }
 
-    public func chooseSegue(type: Int)
+    public func chooseSegue(type: String)
     {
         switch(type)
         {
-        case 0:
-            segue = "loadServerLogin";
-        case 1:
-            segue = "loadEmployeeLogin";
-        case 2:
-            segue = "updateData";
-        }
+			case "0":
+				segue = "loadServerLogin";
+			case "1":
+				segue = "loadEmployeeLogin";
+			case "2":
+				segue = "updateData";
+			default:
+				segue = "loadServerLogin";		
+		}
     }
 
     public override func didReceiveMemoryWarning() {
@@ -33,12 +34,12 @@ import UIKit
     // Storyboard Actions
     @IBAction func loadScene(sender: AnyObject)
     {
-        chooseSegue(Int(typeOfSegue.text!))
+        chooseSegue(typeOfSegue.text!);
         let delay = 2.0 * Double(NSEC_PER_SEC);
-        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(Delay));
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay));
         dispatch_after(time, dispatch_get_main_queue())
         {
-            self.performSegueWithIdentifier(segue, sender: nil);
+            self.performSegueWithIdentifier(self.segue, sender: nil);
         }
     }
 }

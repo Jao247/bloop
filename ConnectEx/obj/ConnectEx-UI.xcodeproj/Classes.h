@@ -6,28 +6,46 @@
 
 @interface AppDelegate: NSObject
 
-@end
 
-@interface ServerVC: UIViewController, UITextFieldDelegate
-  @property (weak, nonatomic) IBOutlet UITextField *cusID;
-  @property (weak, nonatomic) IBOutlet UITextField *cusPass;
-  @property (weak, nonatomic) IBOutlet UISwitch *isPersonal;
-  @property (weak, nonatomic) IBOutlet UIButton *setupButton;
-@end
 
-@interface SyncVC: UIViewController
-@end
-
-@interface InitialVC: UIViewController
-@property (weak nonatomic) IBOutlet UITextField *typeOfSegue;
-- (IBAction)loadScene:(id)sender;
 @end
 
 @interface DataVC: UIViewController
+
+
+
 @end
 
 @interface EmpLoginVC: UIViewController
-    @property (weak, nonatomic) IBOutlet UITextField *empName;
-    @property (weak, nonatomic) IBOutlet UITextField *empPass;
-    @property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *empName;
+@property (weak, nonatomic) IBOutlet UITextField *empPass;
+
+
 @end
+
+@interface InitialVC: UIViewController
+
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UITextField *typeOfSegue;
+
+- (IBAction)loadScene:(id)sender;
+
+@end
+
+@interface ServerVC: UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *cusID;
+@property (weak, nonatomic) IBOutlet UITextField *cusPass;
+@property (weak, nonatomic) IBOutlet UISwitch *isPersonal;
+@property (weak, nonatomic) IBOutlet UIButton *setupButton;
+
+
+@end
+
+@interface SyncVC: UIViewController
+
+
+
+@end
+
