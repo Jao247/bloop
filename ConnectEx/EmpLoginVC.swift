@@ -1,6 +1,6 @@
 import UIKit
 
-@IBObject class EmpLoginViewController: UIViewController {
+@IBObject class EmpLoginVC: UIViewController {
 
 	//Storyboard Variables
 	@IBOutlet weak var empName: UITextField!;

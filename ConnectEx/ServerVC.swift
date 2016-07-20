@@ -1,6 +1,6 @@
 ﻿import UIKit
 
-@IBObject class ServerViewController : UIViewController, IUITextFieldDelegate {
+@IBObject class ServerVC : UIViewController, IUITextFieldDelegate {
     
     // Variables from storyboard
     @IBOutlet weak var cusID: UITextField!;

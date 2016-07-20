@@ -53,11 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.swift" />
-    <Compile Include="ServerViewController.swift" />
-    <Compile Include="InitialViewController.swift" />
-    <Compile Include="DataViewController.swift" />
-    <Compile Include="EmplLoginViewController.swift" />
-    <Compile Include="SyncViewController.swift" />
+    <Compile Include="ServerVC.swift" />
+    <Compile Include="InitialVC.swift" />
+    <Compile Include="DataVC.swift" />
+    <Compile Include="EmpLoginVC.swift" />
+    <Compile Include="SyncVC.swift" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Info.plist" />
