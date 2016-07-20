@@ -10,6 +10,7 @@ import UIKit
     
     public override func viewDidLoad() {
 	super.viewDidLoad()
+
     }
 
     public func chooseSegue(type: String)
