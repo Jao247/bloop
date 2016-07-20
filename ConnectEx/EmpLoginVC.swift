@@ -5,6 +5,7 @@ import UIKit
 	//Storyboard Variables
 	@IBOutlet weak var empName: UITextField!;
 	@IBOutlet weak var empPass: UITextField!;
+        @IBOutlet weak var loginButton: UIButton!;
 
 	// Class Variables
 
