@@ -217,13 +217,6 @@
                                 <rect key="frame" x="282" y="281" width="37" height="37"/>
                                 <color key="color" red="1" green="0.53883642890000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFf-IK-mkn">
-                                <rect key="frame" x="14" y="78" width="121" height="29"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are currently downloading the initial package. This may take some time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-bu-Lcr">
                                 <rect key="frame" x="186" y="388" width="229" height="67"/>
                                 <constraints>
@@ -267,14 +260,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CGA-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="UQV-0o-nI2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CGA-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="UQV-0o-nI2">
                                 <rect key="frame" x="180" y="28" width="240" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="7e3-g9-Paz"/>
                                     <constraint firstAttribute="height" constant="139" id="DYf-Sk-J6s"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-XE-4zL">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-XE-4zL">
                                 <rect key="frame" x="165" y="246" width="270" height="146"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FKf-KI-gbe">
@@ -372,6 +365,12 @@
                                 <rect key="frame" x="282" y="281" width="37" height="37"/>
                                 <color key="color" red="1" green="0.53883642890000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSH-nj-Y40">
+                                <rect key="frame" x="550" y="28" width="30" height="30"/>
+                                <connections>
+                                    <segue destination="OvE-8g-0Xm" kind="show" identifier="toList" id="TSl-IR-kQT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -384,6 +383,72 @@
             </objects>
             <point key="canvasLocation" x="169" y="2056"/>
         </scene>
+        <!--Connect-->
+        <scene sceneID="9R4-mT-AZU">
+            <objects>
+                <viewController id="PKm-jh-89D" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uT7-Ep-K86"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOY-Kx-JIY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" semanticContentAttribute="spatial" id="zwO-Ms-UGe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="refresh" id="Wn2-Ux-DEE"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6ww-tX-ZTj"/>
+                        <barButtonItem title="Clear Filters" id="f4e-Ub-Sm2"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
+                        <barButtonItem systemItem="search" id="pe4-Jf-60A"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Connect" id="S8s-Ns-cUK">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="nfl-aA-hUf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="joS-pg-r2k">
+                                <rect key="frame" x="20" y="2" width="161" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="&lt; Log Out">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <segue destination="eQw-gm-F35" kind="show" id="fC9-T2-Led"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="XVx-gm-vRp">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7MQ-pO-Slt">
+                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update Data"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wg1-bf-atg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="2769"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aml-dB-Ii2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OvE-8g-0Xm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G9q-rY-zUX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PKm-jh-89D" kind="relationship" relationship="rootViewController" id="lJz-MJ-S0P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOn-1T-Kuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="2056"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CGA-Logo" width="161" height="80"/>
@@ -392,6 +457,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3lP-oK-ZII"/>
-        <segue reference="dUJ-sZ-eq1"/>
+        <segue reference="fC9-T2-Led"/>
     </inferredMetricsTieBreakers>
 </document>
