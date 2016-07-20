@@ -27,5 +27,5 @@
 @interface EmpLoginVC: UIViewController
     @property (weak, nonatomic) IBOutlet UITextField *empName;
     @property (weak, nonatomic) IBOutlet UITextField *empPass;
-    @property (weak, nonatomic) IBOutlet UIButton *LoginButton;
+    @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @end
