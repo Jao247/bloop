@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dwz-6w-ZuW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Server Log in-->
@@ -400,21 +401,35 @@
                     <view key="view" contentMode="scaleAspectFit" semanticContentAttribute="spatial" id="zwO-Ms-UGe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spm-vG-63F">
+                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vZS-cf-nt8"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="refresh" id="Wn2-Ux-DEE"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6ww-tX-ZTj"/>
+                                    <barButtonItem title="Clear Filters" id="f4e-Ub-Sm2"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Joe-7O-vU4"/>
+                                    <barButtonItem systemItem="reply" id="8iq-Y6-wYc">
+                                        <connections>
+                                            <segue destination="eQw-gm-F35" kind="show" id="pcb-f9-2vG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
+                                    <barButtonItem systemItem="search" id="pe4-Jf-60A"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="spm-vG-63F" secondAttribute="trailing" constant="-20" id="alw-vm-t4f"/>
+                            <constraint firstItem="aOY-Kx-JIY" firstAttribute="top" secondItem="spm-vG-63F" secondAttribute="bottom" id="jQp-g1-UTS"/>
+                            <constraint firstItem="spm-vG-63F" firstAttribute="leading" secondItem="zwO-Ms-UGe" secondAttribute="leadingMargin" constant="-20" id="nGH-AO-uLu"/>
+                        </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem systemItem="refresh" id="Wn2-Ux-DEE"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6ww-tX-ZTj"/>
-                        <barButtonItem title="Clear Filters" id="f4e-Ub-Sm2"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Joe-7O-vU4"/>
-                        <barButtonItem systemItem="reply" id="8iq-Y6-wYc">
-                            <connections>
-                                <segue destination="eQw-gm-F35" kind="show" id="pcb-f9-2vG"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
-                        <barButtonItem systemItem="search" id="pe4-Jf-60A"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Connect" id="S8s-Ns-cUK">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="XVx-gm-vRp">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7MQ-pO-Slt">
