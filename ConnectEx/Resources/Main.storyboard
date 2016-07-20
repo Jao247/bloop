@@ -65,7 +65,7 @@
                                                     <constraint firstAttribute="width" constant="210" id="wHg-nm-ndj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -137,7 +137,7 @@
         <!--Check for login-->
         <scene sceneID="0PY-OS-sZ8">
             <objects>
-                <viewController id="dwz-6w-ZuW" userLabel="Check for login" sceneMemberID="viewController">
+                <viewController id="dwz-6w-ZuW" userLabel="Check for login" customClass="InitialVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yK2-Bz-fGn"/>
                         <viewControllerLayoutGuide type="bottom" id="G1M-KE-S4d"/>
@@ -183,7 +183,7 @@
         <!--Acquire First Time Data-->
         <scene sceneID="hCn-jg-vYF">
             <objects>
-                <viewController id="aGT-SH-HAr" userLabel="Acquire First Time Data" sceneMemberID="viewController">
+                <viewController id="aGT-SH-HAr" userLabel="Acquire First Time Data" customClass="DataVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bnj-s3-yb8"/>
                         <viewControllerLayoutGuide type="bottom" id="6M7-CW-cMR"/>
@@ -210,7 +210,7 @@
         <!--Employee Login-->
         <scene sceneID="ul3-NN-dqz">
             <objects>
-                <viewController id="eQw-gm-F35" userLabel="Employee Login" sceneMemberID="viewController">
+                <viewController id="eQw-gm-F35" userLabel="Employee Login" customClass="EmpLoginVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sa0-Gq-HIr"/>
                         <viewControllerLayoutGuide type="bottom" id="Hfw-yT-uft"/>
@@ -268,7 +268,7 @@
                                                     <constraint firstAttribute="width" constant="210" id="neb-Ok-nMT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -298,6 +298,11 @@
                             <constraint firstItem="UQV-0o-nI2" firstAttribute="centerX" secondItem="F1l-Cv-Qba" secondAttribute="centerX" id="cVk-bC-73x"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="LoginButton" destination="JN9-MX-AHO" id="eO4-Cs-C3M"/>
+                        <outlet property="empName" destination="g8a-v4-mAF" id="tls-OH-pUW"/>
+                        <outlet property="empPass" destination="rMe-TG-CZB" id="0hH-f6-F08"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ec-If-CTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,7 +311,7 @@
         <!--data Update Screen-->
         <scene sceneID="0Oq-Al-zR3">
             <objects>
-                <viewController id="V0s-hL-y47" userLabel="data Update Screen" sceneMemberID="viewController">
+                <viewController id="V0s-hL-y47" userLabel="data Update Screen" customClass="SyncVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qI3-xO-XYc"/>
                         <viewControllerLayoutGuide type="bottom" id="zgN-0Y-uPy"/>
