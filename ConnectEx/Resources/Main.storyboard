@@ -227,18 +227,21 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZMC-JO-FKI">
                                 <rect key="frame" x="20" y="370" width="560" height="2"/>
                             </progressView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XGL-ds-k4F">
-                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XGL-ds-k4F">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="1" green="0.53883642890000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VIL-bu-Lcr" firstAttribute="top" secondItem="ZMC-JO-FKI" secondAttribute="bottom" constant="8" id="1Mf-Ja-lQz"/>
+                            <constraint firstItem="XGL-ds-k4F" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="GeZ-4i-UeA"/>
                             <constraint firstItem="ZMC-JO-FKI" firstAttribute="leading" secondItem="6V1-pz-TTI" secondAttribute="leadingMargin" id="Kpi-BY-xQt"/>
                             <constraint firstItem="VIL-bu-Lcr" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="MnJ-bI-xxt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZMC-JO-FKI" secondAttribute="trailing" id="Nly-34-kLl"/>
                             <constraint firstItem="ZMC-JO-FKI" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="UzF-Y9-MGF"/>
                             <constraint firstItem="6M7-CW-cMR" firstAttribute="top" secondItem="VIL-bu-Lcr" secondAttribute="bottom" constant="153" id="VY6-aF-Pvs"/>
+                            <constraint firstItem="XGL-ds-k4F" firstAttribute="centerY" secondItem="6V1-pz-TTI" secondAttribute="centerY" id="mlP-Ca-PGi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mich" id="MP9-zd-dTc"/>
@@ -384,6 +387,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="oEX-Xc-jkz"/>
-        <segue reference="3lP-oK-ZII"/>
+        <segue reference="8U9-HR-XxW"/>
     </inferredMetricsTieBreakers>
 </document>
