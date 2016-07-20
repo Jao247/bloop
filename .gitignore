@@ -243,3 +243,5 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 *.xcuserstate
+
+ConnectEx/obj/ConnectEx-UI.xcodeproj/project.xcworkspace/xcuserdata/jason.xcuserdatad/UserInterfaceState.xcuserstate

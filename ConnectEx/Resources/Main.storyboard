@@ -338,7 +338,7 @@
         <image name="Placeholder" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oEX-Xc-jkz"/>
         <segue reference="3lP-oK-ZII"/>
+        <segue reference="dUJ-sZ-eq1"/>
     </inferredMetricsTieBreakers>
 </document>
