@@ -1,6 +1,6 @@
 import UIKit
 
-@IBObject public class DataViewController: UIViewController {
+@IBObject class DataViewController: UIViewController {
 		
 	public override func viewDidLoad() {
 		super.viewDidLoad()

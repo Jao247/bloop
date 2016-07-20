@@ -1,6 +1,6 @@
 import UIKit
 
-@IBObject public class SyncViewController: UIViewController {
+@IBObject class SyncViewController: UIViewController {
 		
 	public override func viewDidLoad() {
 		super.viewDidLoad()
