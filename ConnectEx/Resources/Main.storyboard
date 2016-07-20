@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dwz-6w-ZuW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Server Log in-->
@@ -214,8 +213,19 @@
                                     <segue destination="eQw-gm-F35" kind="show" identifier="goToEmp" id="dUJ-sZ-eq1"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XGL-ds-k4F">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="1" green="0.53883642890000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFf-IK-mkn">
+                                <rect key="frame" x="14" y="78" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are currently downloading the initial package. This may take some time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-bu-Lcr">
-                                <rect key="frame" x="186" y="380" width="229" height="67"/>
+                                <rect key="frame" x="186" y="388" width="229" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="229" id="chD-kH-0Yc"/>
                                     <constraint firstAttribute="height" constant="67" id="wqW-Cf-tUp"/>
@@ -224,22 +234,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZMC-JO-FKI">
-                                <rect key="frame" x="20" y="370" width="560" height="2"/>
-                            </progressView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XGL-ds-k4F">
-                                <rect key="frame" x="290" y="290" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VIL-bu-Lcr" firstAttribute="top" secondItem="ZMC-JO-FKI" secondAttribute="bottom" constant="8" id="1Mf-Ja-lQz"/>
+                            <constraint firstItem="VIL-bu-Lcr" firstAttribute="top" secondItem="XGL-ds-k4F" secondAttribute="bottom" constant="70" id="0Sy-fk-2Xd"/>
                             <constraint firstItem="XGL-ds-k4F" firstAttribute="centerY" secondItem="6V1-pz-TTI" secondAttribute="centerY" id="3ie-Nw-r6I"/>
-                            <constraint firstItem="ZMC-JO-FKI" firstAttribute="top" secondItem="XGL-ds-k4F" secondAttribute="bottom" constant="60" id="Cj8-1H-wjB"/>
-                            <constraint firstItem="ZMC-JO-FKI" firstAttribute="leading" secondItem="6V1-pz-TTI" secondAttribute="leadingMargin" id="Kpi-BY-xQt"/>
                             <constraint firstItem="VIL-bu-Lcr" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="MnJ-bI-xxt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZMC-JO-FKI" secondAttribute="trailing" id="Nly-34-kLl"/>
-                            <constraint firstItem="ZMC-JO-FKI" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="UzF-Y9-MGF"/>
                             <constraint firstItem="6M7-CW-cMR" firstAttribute="top" secondItem="VIL-bu-Lcr" secondAttribute="bottom" constant="153" id="VY6-aF-Pvs"/>
                             <constraint firstItem="XGL-ds-k4F" firstAttribute="centerX" secondItem="6V1-pz-TTI" secondAttribute="centerX" id="nRE-D5-ka3"/>
                         </constraints>
