@@ -462,14 +462,17 @@
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pMh-5x-hRN">
-                                <rect key="frame" x="10" y="72" width="580" height="434"/>
+                                <rect key="frame" x="10" y="72" width="403" height="434"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="403" id="Tiq-bv-Asc"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Gzo-MB-Ykc">
-                                        <rect key="frame" x="0.0" y="28" width="580" height="200"/>
+                                        <rect key="frame" x="0.0" y="28" width="403" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gzo-MB-Ykc" id="K2m-Zr-ihw">
-                                            <rect key="frame" x="0.0" y="0.0" width="580" height="199.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="403" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6pI-TG-xD2">
@@ -673,6 +676,11 @@
                             <constraint firstItem="aOY-Kx-JIY" firstAttribute="top" secondItem="spm-vG-63F" secondAttribute="bottom" id="jQp-g1-UTS"/>
                             <constraint firstItem="spm-vG-63F" firstAttribute="leading" secondItem="zwO-Ms-UGe" secondAttribute="leadingMargin" constant="-20" id="nGH-AO-uLu"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1WY-vX-Mkv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Connect" id="S8s-Ns-cUK">
