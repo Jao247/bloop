@@ -389,35 +389,6 @@
             </objects>
             <point key="canvasLocation" x="169" y="2056"/>
         </scene>
-        <!--Filters-->
-        <scene sceneID="ZL0-bu-ZFZ">
-            <objects>
-                <tableViewController id="s3x-0i-WZ4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Osg-tR-3Qr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterList" rowHeight="200" id="8fD-Ol-6YI">
-                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8fD-Ol-6YI" id="UzD-Lg-rCe">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="s3x-0i-WZ4" id="SLI-5R-5rE"/>
-                            <outlet property="delegate" destination="s3x-0i-WZ4" id="iuP-T8-YRU"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Filters" id="qpo-KV-TGp"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vAR-wG-mZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="169" y="2769"/>
-        </scene>
         <!--Connect-->
         <scene sceneID="9R4-mT-AZU">
             <objects>
@@ -448,11 +419,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
-                                    <barButtonItem title="Filters" id="tFN-yS-GEp">
-                                        <connections>
-                                            <segue destination="s3x-0i-WZ4" kind="show" id="x4g-Pe-T9q"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Filters" id="tFN-yS-GEp"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4WL-bW-NcL"/>
                                     <barButtonItem systemItem="search" id="pe4-Jf-60A">
                                         <connections>
