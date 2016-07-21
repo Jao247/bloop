@@ -52,6 +52,7 @@
     <Reference Include="libSwift.fx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APIListVC.swift" />
     <Compile Include="AppDelegate.swift" />
     <Compile Include="ServerVC.swift" />
     <Compile Include="InitialVC.swift" />

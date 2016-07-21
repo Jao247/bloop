@@ -17,15 +17,15 @@ import UIKit
     {
         switch(type)
         {
-			case "0":
-				segue = "loadServerLogin";
-			case "1":
-				segue = "loadEmployeeLogin";
-			case "2":
-				segue = "updateData";
-			default:
-				segue = "loadServerLogin";		
-		}
+	case "0":
+	    segue = "loadServerLogin";
+	case "1":
+	    segue = "loadEmployeeLogin";
+	case "2":
+	    segue = "updateData";
+	default:
+	    segue = "loadServerLogin";		
+	}
     }
 
     public override func didReceiveMemoryWarning() {
@@ -39,8 +39,8 @@ import UIKit
         let delay = 2.0 * Double(NSEC_PER_SEC);
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay));
         dispatch_after(time, dispatch_get_main_queue())
-        {
-            self.performSegueWithIdentifier(self.segue, sender: nil);
+    {
+        self.performSegueWithIdentifier(self.segue, sender: nil);
         }
     }
 }
