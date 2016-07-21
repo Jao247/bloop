@@ -415,7 +415,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Joe-7O-vU4"/>
                                     <barButtonItem systemItem="reply" id="8iq-Y6-wYc">
                                         <connections>
-                                            <segue destination="eQw-gm-F35" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="aBH-AW-aLO"/>
+                                            <segue destination="eQw-gm-F35" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="partialCurl" id="aBH-AW-aLO"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
