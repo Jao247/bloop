@@ -297,7 +297,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="xZX-Mg-AFK"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" background="I" translatesAutoresizingMaskIntoConstraints="NO" id="rMe-TG-CZB">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMe-TG-CZB">
                                                 <rect key="frame" x="60" y="0.0" width="210" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="210" id="neb-Ok-nMT"/>
@@ -704,7 +704,6 @@
     </scenes>
     <resources>
         <image name="CGA-Logo" width="161" height="80"/>
-        <image name="I" width="161" height="80"/>
         <image name="Placeholder" width="400" height="400"/>
         <image name="blue-cir" width="80" height="80"/>
         <image name="green-cir" width="80" height="80"/>
