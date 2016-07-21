@@ -390,24 +390,6 @@
             </objects>
             <point key="canvasLocation" x="169" y="2056"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Uvg-2F-jCi">
-            <objects>
-                <viewController id="x1B-sT-VvP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gam-0L-v9p"/>
-                        <viewControllerLayoutGuide type="bottom" id="F47-OG-HJa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LbX-ZC-r4E">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g0S-9j-qXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="169" y="3543"/>
-        </scene>
         <!--Connect-->
         <scene sceneID="9R4-mT-AZU">
             <objects>
@@ -434,6 +416,12 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Joe-7O-vU4"/>
                                     <barButtonItem systemItem="reply" id="8iq-Y6-wYc"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
+                                    <barButtonItem title="Filters" id="tFN-yS-GEp">
+                                        <connections>
+                                            <segue destination="ZFH-o6-k2L" kind="show" id="ezG-Py-AjJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4WL-bW-NcL"/>
                                     <barButtonItem systemItem="search" id="pe4-Jf-60A">
                                         <connections>
                                             <action selector="search" destination="PKm-jh-89D" id="Jmr-qa-FZ0"/>
@@ -673,13 +661,27 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wg1-bf-atg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="1u6-Xb-HyF">
-                    <connections>
-                        <segue destination="x1B-sT-VvP" kind="show" id="XwI-8A-qet"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="1u6-Xb-HyF"/>
             </objects>
             <point key="canvasLocation" x="902" y="2769"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vo4-Co-cwy">
+            <objects>
+                <viewController id="ZFH-o6-k2L" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oof-2T-YQ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="U6P-tT-lId"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9TE-1P-EE7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNC-N1-Tbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="2769"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aml-dB-Ii2">
