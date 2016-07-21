@@ -349,7 +349,6 @@
                     <connections>
                         <outlet property="empName" destination="g8a-v4-mAF" id="tls-OH-pUW"/>
                         <outlet property="empPass" destination="rMe-TG-CZB" id="0hH-f6-F08"/>
-                        <outlet property="loginButton" destination="JN9-MX-AHO" id="Btl-Z9-AiC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ec-If-CTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
