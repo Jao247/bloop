@@ -261,13 +261,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CGA-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="UQV-0o-nI2">
-                                <rect key="frame" x="180" y="72" width="240" height="139"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="7e3-g9-Paz"/>
-                                    <constraint firstAttribute="height" constant="139" id="DYf-Sk-J6s"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-XE-4zL">
                                 <rect key="frame" x="165" y="227" width="270" height="146"/>
                                 <subviews>
@@ -331,6 +324,13 @@
                                     <constraint firstItem="FKf-KI-gbe" firstAttribute="top" secondItem="gBT-XE-4zL" secondAttribute="top" id="ywp-C0-xLi"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CGA-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="UQV-0o-nI2">
+                                <rect key="frame" x="180" y="28" width="240" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7e3-g9-Paz"/>
+                                    <constraint firstAttribute="height" constant="139" id="DYf-Sk-J6s"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -406,12 +406,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0S-9j-qXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="2769"/>
+            <point key="canvasLocation" x="169" y="3543"/>
         </scene>
         <!--Connect-->
         <scene sceneID="9R4-mT-AZU">
             <objects>
-                <viewController id="PKm-jh-89D" sceneMemberID="viewController">
+                <viewController id="PKm-jh-89D" customClass="APIListVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uT7-Ep-K86"/>
                         <viewControllerLayoutGuide type="bottom" id="aOY-Kx-JIY"/>
@@ -426,11 +426,19 @@
                                     <constraint firstAttribute="height" constant="44" id="vZS-cf-nt8"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Clear Filters" id="f4e-Ub-Sm2"/>
+                                    <barButtonItem title="Clear Filters" id="f4e-Ub-Sm2">
+                                        <connections>
+                                            <action selector="filterClear" destination="PKm-jh-89D" id="Nvp-9F-dPT"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Joe-7O-vU4"/>
                                     <barButtonItem systemItem="reply" id="8iq-Y6-wYc"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
-                                    <barButtonItem systemItem="search" id="pe4-Jf-60A"/>
+                                    <barButtonItem systemItem="search" id="pe4-Jf-60A">
+                                        <connections>
+                                            <action selector="search" destination="PKm-jh-89D" id="Jmr-qa-FZ0"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pMh-5x-hRN">
@@ -656,13 +664,20 @@
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Update Data"/>
+                                <connections>
+                                    <action selector="update" destination="PKm-jh-89D" eventType="touchUpInside" id="enS-rU-qYJ"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wg1-bf-atg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="1u6-Xb-HyF"/>
+                <swipeGestureRecognizer direction="right" id="1u6-Xb-HyF">
+                    <connections>
+                        <segue destination="x1B-sT-VvP" kind="show" id="XwI-8A-qet"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="902" y="2769"/>
         </scene>
