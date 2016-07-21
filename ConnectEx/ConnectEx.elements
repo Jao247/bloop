@@ -54,11 +54,13 @@
   <ItemGroup>
     <Compile Include="APIListVC.swift" />
     <Compile Include="AppDelegate.swift" />
+    <Compile Include="FilterListViewCell.swift" />
     <Compile Include="ServerVC.swift" />
     <Compile Include="InitialVC.swift" />
     <Compile Include="DataVC.swift" />
     <Compile Include="EmpLoginVC.swift" />
     <Compile Include="SyncVC.swift" />
+    <Compile Include="FilterListTVC.swift" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Info.plist" />
