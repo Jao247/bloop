@@ -416,9 +416,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Joe-7O-vU4"/>
                                     <barButtonItem systemItem="reply" id="8iq-Y6-wYc">
                                         <connections>
-                                            <segue destination="eQw-gm-F35" kind="popoverPresentation" popoverAnchorBarButtonItem="8iq-Y6-wYc" id="aBH-AW-aLO">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
+                                            <segue destination="eQw-gm-F35" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="aBH-AW-aLO"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yj1-cW-hmD"/>
@@ -713,7 +711,7 @@
         <image name="white-cir" width="80" height="80"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8U9-HR-XxW"/>
         <segue reference="aBH-AW-aLO"/>
+        <segue reference="8U9-HR-XxW"/>
     </inferredMetricsTieBreakers>
 </document>
