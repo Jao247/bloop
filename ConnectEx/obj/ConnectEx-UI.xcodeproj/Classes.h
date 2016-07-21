@@ -4,6 +4,15 @@
 // It is not meant to compile, and any changes will be ignored and discarded. 
 //
 
+@interface APIListVC: UIViewController
+
+
+- (IBAction)filterClear;
+- (IBAction)search;
+- (IBAction)update;
+
+@end
+
 @interface AppDelegate: NSObject
 
 
@@ -20,7 +29,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *empName;
 @property (weak, nonatomic) IBOutlet UITextField *empPass;
-@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 
 @end

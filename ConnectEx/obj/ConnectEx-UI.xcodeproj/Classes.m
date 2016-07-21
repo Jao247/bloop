@@ -6,6 +6,25 @@
 
 #import "Classes.h"
 
+@implementation APIListVC
+
+- (IBAction)filterClear
+{
+  // Placeholder method. Do not add code here.
+}
+- (IBAction)search
+{
+  // Placeholder method. Do not add code here.
+}
+- (IBAction)update
+{
+  // Placeholder method. Do not add code here.
+}
+
+@end
+
+#import "Classes.h"
+
 @implementation AppDelegate
 
 
