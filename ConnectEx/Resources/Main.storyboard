@@ -439,7 +439,7 @@
                                     <constraint firstAttribute="width" constant="403" id="Tiq-bv-Asc"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="api" id="Gzo-MB-Ykc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="api" id="Gzo-MB-Ykc" customClass="APIVCell">
                                         <rect key="frame" x="0.0" y="28" width="600" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gzo-MB-Ykc" id="K2m-Zr-ihw">
@@ -636,6 +636,14 @@
                                                 <constraint firstItem="amq-eV-SoG" firstAttribute="leading" secondItem="K2m-Zr-ihw" secondAttribute="leadingMargin" constant="7" id="rSS-gJ-OV2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="freq" destination="2M8-iU-grg" id="96y-wC-Cc1"/>
+                                            <outlet property="lastUp" destination="2QX-dI-DVK" id="841-M5-cj8"/>
+                                            <outlet property="name" destination="tza-VU-5uv" id="nal-5D-UHw"/>
+                                            <outlet property="nextUp" destination="vcJ-pK-Eev" id="QYy-50-EhF"/>
+                                            <outlet property="rec" destination="fgY-ch-NCd" id="YGd-19-4PF"/>
+                                            <outlet property="upDown" destination="rqU-2b-hoe" id="gYE-bU-ixk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="default">

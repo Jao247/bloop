@@ -15,14 +15,14 @@
 
 @end
 
-@interface APIVCell: NSObject
+@interface APIVCell: UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *freq;
 @property (weak, nonatomic) IBOutlet UILabel *lastUp;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *nextUp;
 @property (weak, nonatomic) IBOutlet UILabel *rec;
-@property (weak, nonatomic) IBOutlet UIImage *upDown;
+@property (weak, nonatomic) IBOutlet UIImageView *upDown;
 
 
 @end
