@@ -4,3 +4,86 @@
 // It is not meant to compile, and any changes will be ignored and discarded. 
 //
 
+#import "Classes.h"
+
+@implementation APIListVC
+
+- (IBAction)filterClear
+{
+  // Placeholder method. Do not add code here.
+}
+- (IBAction)search
+{
+  // Placeholder method. Do not add code here.
+}
+- (IBAction)setFilter
+{
+  // Placeholder method. Do not add code here.
+}
+- (IBAction)update
+{
+  // Placeholder method. Do not add code here.
+}
+
+@end
+
+#import "Classes.h"
+
+@implementation AppDelegate
+
+
+@end
+
+#import "Classes.h"
+
+@implementation DataVC
+
+
+@end
+
+#import "Classes.h"
+
+@implementation EmpLoginVC
+
+
+@end
+
+#import "Classes.h"
+
+@implementation FilterListTVC
+
+
+@end
+
+#import "Classes.h"
+
+@implementation FilterListViewCell
+
+
+@end
+
+#import "Classes.h"
+
+@implementation InitialVC
+
+- (IBAction)loadScene:(id)sender
+{
+  // Placeholder method. Do not add code here.
+}
+
+@end
+
+#import "Classes.h"
+
+@implementation ServerVC
+
+
+@end
+
+#import "Classes.h"
+
+@implementation SyncVC
+
+
+@end
+
