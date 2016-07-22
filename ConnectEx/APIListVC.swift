@@ -1,6 +1,6 @@
 ﻿import UIKit
 
-@IBObject class APIListVC: UIViewController, IUITableViewDelegate, IUITableViewDataSource {
+@IBObject class APIListVC: UIViewController{
 
 	@IBOutlet weak var tableView: UITableView!;
 
@@ -29,7 +29,7 @@
         apis = [api0, api1, api2, api3, api4, api5];
     }
    
-    //Table View Delegate.
+    /*Table View Delegate.
 	public func tableView(tableView: UITableView, numberOfRowsInSection section: NSInteger) -> NSInteger {
 			return apis.count;
 	}
@@ -42,7 +42,7 @@
     public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
-    
+    */
     // Storyboard Actions
     @IBAction func update() /* - Update Data Button -  */ {
     print("Pull fresh data from server / post fresh data to server in background.")
