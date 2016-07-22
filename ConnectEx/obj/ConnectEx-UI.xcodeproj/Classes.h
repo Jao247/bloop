@@ -4,3 +4,71 @@
 // It is not meant to compile, and any changes will be ignored and discarded. 
 //
 
+@interface APIListVC: UIViewController
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)filterClear;
+- (IBAction)search;
+- (IBAction)setFilter;
+- (IBAction)update;
+
+@end
+
+@interface APIVCell: NSObject
+
+@property (weak, nonatomic) IBOutlet UILabel *freq;
+@property (weak, nonatomic) IBOutlet UILabel *lastUp;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *nextUp;
+@property (weak, nonatomic) IBOutlet UILabel *rec;
+@property (weak, nonatomic) IBOutlet UIImage *upDown;
+
+
+@end
+
+@interface AppDelegate: NSObject
+
+
+
+@end
+
+@interface DataVC: UIViewController
+
+
+
+@end
+
+@interface EmpLoginVC: UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *empName;
+@property (weak, nonatomic) IBOutlet UITextField *empPass;
+
+
+@end
+
+@interface InitialVC: UIViewController
+
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UITextField *typeOfSegue;
+
+- (IBAction)loadScene:(id)sender;
+
+@end
+
+@interface ServerVC: UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *cusID;
+@property (weak, nonatomic) IBOutlet UITextField *cusPass;
+@property (weak, nonatomic) IBOutlet UISwitch *isPersonal;
+@property (weak, nonatomic) IBOutlet UIButton *setupButton;
+
+
+@end
+
+@interface SyncVC: UIViewController
+
+
+
+@end
+
