@@ -6,6 +6,7 @@
 
 @interface APIListVC: UIViewController
 
+
 - (IBAction)filterClear;
 - (IBAction)search;
 - (IBAction)setFilter;
@@ -15,9 +16,13 @@
 
 @interface AppDelegate: NSObject
 
+
+
 @end
 
 @interface DataVC: UIViewController
+
+
 
 @end
 
@@ -26,9 +31,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *empName;
 @property (weak, nonatomic) IBOutlet UITextField *empPass;
 
+
 @end
 
 @interface FilterListTVC: UITableViewController
+
+
 
 @end
 
@@ -36,6 +44,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 
 @end
 
@@ -59,6 +68,8 @@
 @end
 
 @interface SyncVC: UIViewController
+
+
 
 @end
 
