@@ -1,15 +1,48 @@
 ﻿import UIKit
 
-@IBObject class APIListVC: UIViewController {
+@IBObject class APIListVC: UIViewController, IUITableViewDelegate, IUITableViewDataSource {
 
+	@IBOutlet weak var tableView: UITableView!;
+
+    var apis = [API]();
+    
     public override func viewDidLoad() {
         super.viewDidLoad();
+
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "api")
     }
 
     public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    func addSampleData()
+    {
+        //(n: String, isU: Bool, f: String, lU: String, r: Int, nU: String)
+        let api0 = API(n: "Test1", isU: true, f: "1 Day(s)", lU: "01 Jan 01:00", r: 0, nU: "5 M");
+        let api1 = API(n: "Test2", isU: true, f: "2 Day(s)", lU: "28 Feb 23:00", r: 0, nU: "20 M");
+        let api2 = API(n: "Test3", isU: true, f: "3 Day(s)", lU: "03 Jun 01:00", r: 0, nU: "14 M");
+        let api3 = API(n: "Test4", isU: true, f: "1 Year(s)", lU: "01 Jul 01:00", r: 0, nU: "3 D");
+        let api4 = API(n: "Test5", isU: true, f: "2 Week(s)", lU: "01 Aug 01:00", r: 0, nU: "2 H");
+        let api5 = API(n: "Test6", isU: true, f: "2 Month(s)", lU: "01 Apr 01:00", r: 0, nU: "1 H");
+
+        apis = [api0, api1, api2, api3, api4, api5];
+    }
+   
+    //Table View Delegate.
+	public func tableView(tableView: UITableView, numberOfRowsInSection section: NSInteger) -> NSInteger {
+			return apis.count;
+	}
+
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = self.tableView.dequeueReusableCellWithIdentifier("api") as! APIVCell;
+        return cell;
+    }
+
+    public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
     // Storyboard Actions
     @IBAction func update() /* - Update Data Button -  */ {
     print("Pull fresh data from server / post fresh data to server in background.")

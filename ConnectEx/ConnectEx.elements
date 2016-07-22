@@ -52,6 +52,7 @@
     <Reference Include="libSwift.fx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API.swift" />
     <Compile Include="APIListVC.swift" />
     <Compile Include="AppDelegate.swift" />
     <Compile Include="ServerVC.swift" />
@@ -59,6 +60,7 @@
     <Compile Include="DataVC.swift" />
     <Compile Include="EmpLoginVC.swift" />
     <Compile Include="SyncVC.swift" />
+    <Compile Include="APIVCell.swift" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Info.plist" />
